@@ -1,0 +1,18 @@
+
+> test-pkg2@0.0.0 generate-docs /Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/packages/system1/pkg2
+> typedoc --out docs --readme none --exclude "**/*.test.ts" --plugin typedoc-plugin-markdown src
+
+[96m[info][0m Loaded plugin typedoc-plugin-markdown
+[93m[warning][0m TypeDoc has been loaded multiple times. This is commonly caused by plugins which have their own installation of TypeDoc. The loaded paths are:
+	/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc
+TypeDoc exiting with unexpected error:
+TypeError: page.template is not a function
+    at MarkdownTheme.render (/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc-plugin-markdown@3.12.1_typedoc@0.22.16/node_modules/typedoc-plugin-markdown/dist/theme.js:38:49)
+    at _classThis.renderDocument (/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc/dist/lib/output/renderer.js:296:44)
+    at /Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc/dist/lib/output/renderer.js:262:26
+    at Array.forEach (<anonymous>)
+    at _classThis.render (/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc/dist/lib/output/renderer.js:261:29)
+    at async _classThis.generateDocs (/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc/dist/lib/application.js:407:13)
+    at async run (/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc/dist/lib/cli.js:118:13)
+    at async main (/Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/node_modules/.pnpm/typedoc@0.25.12_typescript@5.4.2/node_modules/typedoc/dist/lib/cli.js:49:26)
+ ELIFECYCLE  Command failed with exit code 6.

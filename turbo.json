@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"],
+      "cache": false
+    },
+    "test": {},
+    "ci": {
+      "dependsOn": ["^build"]
+    },
+    "//#clean:root": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "ci-local": {},
+    "generate-docs": {
+      "dependsOn": ["build"]
+    },
+    "lint": {},
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

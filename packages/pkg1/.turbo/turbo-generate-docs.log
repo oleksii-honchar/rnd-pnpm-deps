@@ -1,0 +1,5 @@
+
+> test-pkg1@0.0.0 generate-docs /Users/oleksiihonchar/www/beaver/rnd/rnd-pnpm-deps/packages/pkg1
+> typedoc --out docs --readme none --exclude "**/*.test.ts" --plugin typedoc-plugin-markdown src
+
+[96mInfo: [0mLoaded plugin typedoc-plugin-markdown
