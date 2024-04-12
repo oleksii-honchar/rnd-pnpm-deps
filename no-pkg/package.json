@@ -1,5 +1,5 @@
 {
-  "name": "test-pkg2",
+  "name": "test-pkg3",
   "version": "0.0.0",
   "description": "",
   "author": "",
@@ -11,26 +11,19 @@
     "node": "18"
   },
   "scripts": {
-    "build": "tsc",
-    "ts-node": "ts-node ./src/typedoc.ts",
-    "ci": "pnpm lint && pnpm test -- --coverage && tsc --noEmit",
-    "ci-local": "pnpm test && pnpm lint && pnpm build",
+    "build": "tsc; tsc-alias",
     "clean": "rimraf .turbo && rimraf dist && rimraf node_modules",
-    "generate-docs": "typedoc --out docs --readme none --exclude \"**/*.test.ts\" --plugin typedoc-plugin-markdown src",
-    "typedoc": "node ./src/typedoc.js"
+    "generate-docs": "typedoc --out docs --readme none --exclude \"**/*.test.ts\" --plugin typedoc-plugin-markdown src"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
     "@tsconfig/recommended": "1.0.3",
-    "@types/node": "^18.19.31",
+    "@types/node": "^20.11.30",
     "tsc-alias": "^1.8.8",
     "tsc-watch": "^6.0.4",
     "tslib": "^2.6.2",
     "typedoc": "0.25.13",
     "typedoc-plugin-markdown": "4.0.0-next.55",
     "typescript": "5.4.2"
-  },
-  "dependencies": {
-    "ts-node": "^10.9.2"
   }
 }

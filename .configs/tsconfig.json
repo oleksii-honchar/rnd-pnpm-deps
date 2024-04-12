@@ -8,15 +8,15 @@
   "compilerOptions": {
     "baseUrl": "./",
     "lib": [ "DOM", "esnext"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "paths": {
       "src/*": [ "../src/*" ],
       "scripts/*": [ "../scripts/*" ],
       "blablo": ["../scripts/blablo.ts"],
       "package.json": ["../package.json"]
     },
-    "target": "esnext"
+    "target": "es6",
   },
   "include": [
     "./**/*"

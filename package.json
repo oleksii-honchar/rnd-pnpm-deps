@@ -2,7 +2,8 @@
   "name": "rnd-pnpm-deps",
   "license": "",
   "engines": {
-    "node": "18"
+    "node": "18",
+    "pnpm": "8"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -16,8 +17,7 @@
     "docs:generate": "turbo docs:generate"
   },
   "devDependencies": {
-    "turbo": "1.9.7",
-    "@tsconfig/recommended": "1.0.3"
-  },
-  "packageManager": "^pnpm@8.7.0"
+    "@tsconfig/recommended": "1.0.3",
+    "turbo": "1.9.7"
+  }
 }
